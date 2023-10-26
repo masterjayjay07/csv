@@ -11,7 +11,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "tsc && node dist/server.js",
+    "start": "tsc && node dist/src/server.js",
     "dev": "tsc && node createTables.ts && node dist/src/server.js"
   },
   "devDependencies": {
