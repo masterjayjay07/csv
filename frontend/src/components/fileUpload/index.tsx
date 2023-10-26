@@ -7,6 +7,7 @@ import './style.css';
 function FileUploadComponent() {
   const [csvData, setCsvData] = useState<CardInterface[]>([]);
   const [selectedFile, setSelectedFile] = useState(null);
+  const url = process.env.REACT_APP_BACKEND_URL;
 
   const handleFileSelect = (e) => {
     const file = e.target.files[0];
@@ -36,7 +37,7 @@ function FileUploadComponent() {
             data.push(obj);
           }
 
-          fetch('http://localhost:3000/files', {
+          fetch(`${url}/files`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -66,7 +67,7 @@ function FileUploadComponent() {
   };
 
   const handleSearch = (data: string) => {
-    fetch(`http://localhost:3000/users?q=${data}`)
+    fetch(`${url}/users?q=${data}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network error');
