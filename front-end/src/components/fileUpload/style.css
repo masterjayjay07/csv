@@ -1,0 +1,23 @@
+.FileUploadContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.fileContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding-left: 20px;
+}
+
+.InputContainer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px;
+	gap: 10px;
+	width: 200px;
+	border: 2px solid #fff;
+}

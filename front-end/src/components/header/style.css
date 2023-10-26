@@ -1,0 +1,9 @@
+.HeaderContainer {
+	height: 70px;
+	background-color: #282c34;
+	display: flex;
+	align-items: flex-start;
+	padding-left: 20px;
+	color: #fff;
+	margin-bottom: 15px;
+}
