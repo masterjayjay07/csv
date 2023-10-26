@@ -84,7 +84,7 @@ function FileUploadComponent() {
 
   return (
     <div className='FileUploadContainer'>
-      <div className='fileContainer'>
+      <div className='fileContainer' data-testid="file-container">
         <div className='InputContainer'>
           <input type="file" accept=".csv" onChange={handleFileSelect} />
         </div>

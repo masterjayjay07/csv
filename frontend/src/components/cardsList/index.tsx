@@ -14,6 +14,7 @@ function CardsList({ csvData }: Props) {
                     <li
                         key={index}
                         className="carousel-item"
+                        data-testid="carousel-item"
                     >
                         <Card
                             key={index}
